@@ -12,39 +12,106 @@
     <header id="header">
         <img id="header-img" src="img/Yummy-logo.png" alt="Yummy logo">
         <nav id="nav-bar">
-            <a href="" class="nav-link">Yummy!</a>
-            <a href="" class="nav-link">Contact us</a>
-            <a href="" class="nav-link">Order now</a>
+            <a href="#Yummy!" class="nav-link">Yummy!</a>
+            <a href="#Contact_us" class="nav-link">Contact us</a>
+            <a href="#Order_now" class="nav-link">Order now</a>
         </nav>
     </header>
 
     <main>
-        <div class="specs-cntr">
+        <div id="Yummy!" class="specs-cntr">
             <div class="specs-unit">
-                <span class="material-symbols-rounded">Pets</span>
-                <p>The best food for your pet. Made with the best ingredients, without preservatives and transgenic.</p>
+                <div class="tiny-cntr">
+                    <span class="material-symbols-rounded">Pets</span>
+                </div>
+                <div class="p-cntr">
+                    <p>The best food for your pet. Made with the best ingredients, without preservatives and transgenic.</p>
+                </div>
             </div>
             <div class="specs-unit">
-                <span class="material-symbols-rounded">health_and_safety</span>
-                <p>Our food is healthy. Your beloved kitten will live good and strong, garanting his plenty growth.</p>
+                <div class="tiny-cntr">
+                    <span class="material-symbols-rounded">health_and_safety</span>
+                </div>
+                <div class="p-cntr">
+                    <p>Our food is healthy. Your beloved kitten will live good and strong, garanting his plenty growth.</p>
+                </div>
             </div>
             <div class="specs-unit">
-                <span class="material-symbols-rounded">clinical_notes</span>
-                <p>Is your pet eating good, bad, suficient? Do you know and how? Among our huge product variations, it's  because we really concern with your pet. For example we suggest in the food package a diet for your kitten. If you are curious about cat diet please send us a e-mail, for more details!</p>
+                <div class="tiny-cntr">
+                    <span class="material-symbols-rounded">clinical_notes</span>
+                </div>
+                <div class="p-cntr">
+                    <p>Is your pet eating good, bad, suficient? Do you know and how? Among our huge product variations, it's  because we really concern with your pet. For example we suggest in the food package a diet for your kitten. If you are curious about cat diet please send us a e-mail, for more details!</p>
+                </div>
             </div>
             <div class="specs-unit">
-                <span class="material-symbols-rounded">medication</span>
-                <p>Your cat is sick and it's hard to took medicine? No problem! We have a whole line on food with medication on it, garanting your pet treatment without any stress.</p>
+                <div class="tiny-cntr">
+                    <span class="material-symbols-rounded">medication</span>
+                </div>
+                <div class="p-cntr">
+                    <p>Your cat is sick and it's hard to took medicine? No problem! We have a whole line on food with medication on it, garanting your pet treatment without any stress.</p>
+                </div>
             </div>
             <div class="specs-unit">
-                <span class="material-symbols-rounded">diversity_4</span>
-                <p>We make all with love! Since this website, till the packaging and the food, we do as if it were for our own kittens.</p>
+                <div class="tiny-cntr">
+                    <span class="material-symbols-rounded">diversity_4</span>
+                </div>
+                <div class="p-cntr">
+                    <p>We make all with love! Since this website, till the packaging and the food, we do as if it were for our own kittens.</p>
+                </div>
             </div>
         </div>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
+
+        <div class="video">
+            <img src="img/gatinho-9.png" alt="" loading="lazy">
+            <h2>They love our food!</h2>
+            <iframe id="video" src="https://www.youtube.com/embed/wOWdU2btU7c?si=TjTAWgxDNc3jHBc4&amp;controls=0&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <form id="Contact_us" action="https://www.freecodecamp.com/email-submit" id="form">
             <input type="email" name="" id="email" placeholder="Insert your e-mail">
             <input type="submit" value="Submit" id="submit">
         </form>
+
+        <h1 id="Order_now">Check our plans below!</h1>
+        <p>It's a subscribe system where you choose between three packages, choosing one you'll fill an online sheet who will redirect for your e-mail or message app when completed.</p>
+        <p>There you'll fill many camps related with freight, package type, weight, quantity and other. It'll take some time and attention from you, but doing it you'll see our plans are more economic and safe for your pet than you going to the market or petshop and take a random pet food.</p>
+        <div class="card-cntr">
+            <div class="card">
+                <p>Standard plan</p>
+                <ul>
+                    <li>Choose the food and package type</li>
+                    <li>
+                        Type of freights:
+                        <ul>
+                            <li>Collect in one of our stores or partners</li>
+                            <li>Receive in home as scheduled</li>
+                            <li>Receive in home on call</li>
+                        </ul>
+                    </li>
+                    <li>Quantity and weight</li>
+                </ul>
+            </div>
+            <div class="card">
+                <p>Diet plan</p>
+                <ul>
+                    <li>All the Standard plan features</li>
+                    <li>Dual-way service*</li>
+                    <li>Customized service</li>
+                    <li>Personal diet</li>
+                    <li>Diet and pet's stats follow-up</li>
+                </ul>
+            </div>
+            <div class="card">
+                <p>Full plan</p>
+                <ul>
+                    <li>All the Diet plan features</li>
+                    <li>Triple-way service**</li>
+                    <li>Emergency freight</li>
+                    <li>Quick service 24hr</li>
+                    <li>Special food for treatment</li>
+                </ul>
+            </div>
+        </div>
     </main>
 </body>
 </html>
@@ -54,7 +121,7 @@
         3. Within the #header element, you can see a nav element with a corresponding id="nav-bar"
         4. You can see at least three clickable elements inside the nav element, each with the class nav-link
     5. When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
-    6. You can watch an embedded product video with id="video"
+        6. You can watch an embedded product video with id="video"
         7. Your landing page has a form element with a corresponding id="form"
         8. Within the form, there is an input field with id="email" where you can enter an email address
         9. The #email input field should have placeholder text to let users know what the field is for
@@ -62,6 +129,6 @@
         11. Within the form, there is a submit input with a corresponding id="submit"
         12. When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
     13. The navbar should always be at the top of the viewport
-    14. Your product landing page should have at least one media query
-    15. Your product landing page should utilize CSS flexbox at least once
+        14. Your product landing page should have at least one media query
+        15. Your product landing page should utilize CSS flexbox at least once
 -->
