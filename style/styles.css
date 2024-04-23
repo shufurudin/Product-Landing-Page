@@ -1,18 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Buycat';
+    src: url(../font/Buycat.otf), url(../font/Buycat.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 html, body {
     overflow-x: hidden
+}
+
+h1, h2, h3 {
+    font-family: Comfortaa, cursive;
+}
+h1, h2 {
+    font-weight: 700;
+    color: #A51BD0;
+    text-shadow: -1px 0px 2px #ECE300;
+}
+p {
+    font-family: Overpass, sans-serif;
+    line-height: 1.3rem;
+    text-align: justify;
+    color: rgb(80, 80, 80);
+}
+a {
+    font-family: 'Buycat';
+    font-weight: 100;
+}
+li {
+    font-family: Overpass, sans-serif;
+    color: rgb(80, 80, 80);
 }
 
 #header {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
-#header img {
+#header .img-cntr {
+    background: linear-gradient(
+        360deg,
+        #c066db 10%,
+        #c378da 30%,
+        #cf97e0 60%,
+        #ddb2eb 85%,
+        white
+    );
+}
+.img-cntr img {
     display: block;
     margin: auto;
     text-align: center;
@@ -20,27 +65,58 @@ html, body {
 #header nav {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 25px;
+    position: relative;
+    top: -1px;
+    background-color: #c066db;
+}
+#nav-bar a {
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 7px 0 5px 0;
+    text-align: center;
+    color: rgb(150, 255, 255);
+    text-shadow: -1px 0 1px #F3E4CB;
+}
+#nav-bar a:visited {
+    color: rgb(150, 255, 255);
+    
+}
+#header hr {
+    position: relative;
+    top: -1px;
+    height: 1px;
+    border: none;
+    background-color: #A51BD0;
 }
 
+main {
+    margin-top: 170px;
+}
 main .specs-cntr {
     max-width: 650px;
     margin: auto;
+}
+.specs-cntr h1 {
+    text-align: center;
+    margin-bottom: 15px;
 }
 .specs-cntr .specs-unit {
     display: flex;
     margin: 0 10px;
     margin-bottom: 1rem;
-    border: 1px solid black;
+    background-color: #fdfcdf;
+    border: 1px solid #ECE300;
+    border-radius: 10px; 
 }
 .specs-cntr .tiny-cntr {
     display: flex;
     align-items: center;
-    border-right: 1px solid black;
+    border-right: 1px solid #ECE300;
 }
 .specs-cntr .material-symbols-rounded {
     display: block;
     font-size: 35px;
+    color: #A51BD0;
 }
 .specs-cntr .p-cntr {
     display: flex;
@@ -50,30 +126,46 @@ main .specs-cntr {
     display: block;
     text-align: justify;
     margin: 2px 5px;
+    font-size: 1.1rem;
 }
 
-main .video {
+main .video-cntr {
+    margin-top: -10px;
+    background: linear-gradient(
+        360deg,
+        #A51BD0 20%,
+        #aa30cf 40%,
+        #b54fd4 60%,
+        #ffffff
+        );
+}
+.video-cntr .video {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: end;
-    margin: -15px auto 0 auto;
+    position: relative;
+    top: 1px;
+    margin: auto;
     min-width: 375px;
     max-width: 720px;
     width: 70vw;
 }
-main img {
+.video img {
     position: relative;
     top: 20px;
     left: -10px;
     display: block;
     width: 200px;
 }
-main h2 {
-    text-align: center;
+.video h3 {
     margin-bottom: 15px;
-    padding-right: 10px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(150, 255, 255);
+    text-shadow: -1px 0 1px #F3E4CB;
 }
-main iframe {
+.video iframe {
     grid-column: 1 / -1;
     min-width: 375px;
     width: 70vw;
@@ -81,4 +173,65 @@ main iframe {
     min-height: calc(375px*0.563);
     height: calc(70vw*0.563);
     max-height: calc(720px*0.563);
+    border: 1px solid rgba(236, 228, 0, 0.5);
+}
+
+main #Contact_us {
+    margin: 15px 0;
+}
+#Contact_us #email {
+    width: 75%;
+    max-width: 450px;
+    height: 1.5rem;
+    display: block;
+    font-family: Overpass, sans-serif;
+    text-indent: 0.5rem;
+    margin: auto;
+    border: 1px solid #ECE300;
+    border-radius: 5px;
+}
+#Contact_us #submit {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: Comfortaa, cursive;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    background-color: #A51BD0;
+    color: rgb(150, 255, 255);
+    border-top: 0;
+    border-right: 1px solid #ddb2eb;
+    border-bottom: 0;
+    border-left: 1px solid #ddb2eb;
+    
+}
+
+.plans h1 {
+    text-align: center;
+}
+.card {
+    width: 255px;
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card h3 {
+    text-align: center;
+}
+.card ul {
+    padding-left: 20px;
+}
+.card li {
+    line-height: 1.5rem;
+}
+.card button {
+    display: block;
+    margin: auto;
+}
+.card .asterisk {
+    font-weight: bold;
+    font-size: 0.8rem;
 }

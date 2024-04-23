@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cat food web store">
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
@@ -10,22 +11,26 @@
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="img/Yummy-logo.png" alt="Yummy logo">
+        <div class="img-cntr">
+            <img id="header-img" src="img/Yummy-logo.png" alt="Yummy logo">
+        </div>
         <nav id="nav-bar">
             <a href="#Yummy!" class="nav-link">Yummy!</a>
             <a href="#Contact_us" class="nav-link">Contact us</a>
             <a href="#Order_now" class="nav-link">Order now</a>
         </nav>
+        <hr>
     </header>
 
     <main>
         <div id="Yummy!" class="specs-cntr">
+            <h1>Why our products?</h1>
             <div class="specs-unit">
                 <div class="tiny-cntr">
                     <span class="material-symbols-rounded">Pets</span>
                 </div>
                 <div class="p-cntr">
-                    <p>The best food for your pet. Made with the best ingredients, without preservatives and transgenic.</p>
+                    <p>The best food for your pet. Made with selected ingredients, without preservatives and transgenic.</p>
                 </div>
             </div>
             <div class="specs-unit">
@@ -41,7 +46,7 @@
                     <span class="material-symbols-rounded">clinical_notes</span>
                 </div>
                 <div class="p-cntr">
-                    <p>Is your pet eating good, bad, suficient? Do you know and how? Among our huge product variations, it's  because we really concern with your pet. For example we suggest in the food package a diet for your kitten. If you are curious about cat diet please send us a e-mail, for more details!</p>
+                    <p>Is your pet eating good, bad, suficient? Do you know and how? Among our huge product variations, it's  because we really concern with your pet. For example we suggest in the food package an usual diet for your kitten. If you are curious about cat diet, please send us an e-mail for more details!</p>
                 </div>
             </div>
             <div class="specs-unit">
@@ -49,7 +54,7 @@
                     <span class="material-symbols-rounded">medication</span>
                 </div>
                 <div class="p-cntr">
-                    <p>Your cat is sick and it's hard to took medicine? No problem! We have a whole line on food with medication on it, garanting your pet treatment without any stress.</p>
+                    <p>Your cat is sick and it's hard to take medicine? No problem! We have a whole line on food with medication for this, garanting your pet treatment without any stress.</p>
                 </div>
             </div>
             <div class="specs-unit">
@@ -62,56 +67,69 @@
             </div>
         </div>
 
-        <div class="video">
-            <img src="img/gatinho-9.png" alt="" loading="lazy">
-            <h2>They love our food!</h2>
-            <iframe id="video" src="https://www.youtube.com/embed/wOWdU2btU7c?si=TjTAWgxDNc3jHBc4&amp;controls=0&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-cntr">
+            <div class="video">
+                <img src="img/gatinho-9.png" alt="" loading="lazy">
+                <h3 class="video-text">They love our food!</h3>
+                <iframe id="video" src="https://www.youtube.com/embed/wOWdU2btU7c?si=TjTAWgxDNc3jHBc4&amp;controls=0&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        <form id="Contact_us" action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" name="" id="email" placeholder="Insert your e-mail">
+
+        <form id="Contact_us" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" placeholder="Insert your e-mail">
             <input type="submit" value="Submit" id="submit">
         </form>
 
-        <h1 id="Order_now">Check our plans below!</h1>
-        <p>It's a subscribe system where you choose between three packages, choosing one you'll fill an online sheet who will redirect for your e-mail or message app when completed.</p>
-        <p>There you'll fill many camps related with freight, package type, weight, quantity and other. It'll take some time and attention from you, but doing it you'll see our plans are more economic and safe for your pet than you going to the market or petshop and take a random pet food.</p>
-        <div class="card-cntr">
-            <div class="card">
-                <p>Standard plan</p>
-                <ul>
-                    <li>Choose the food and package type</li>
-                    <li>
-                        Type of freights:
-                        <ul>
-                            <li>Collect in one of our stores or partners</li>
-                            <li>Receive in home as scheduled</li>
-                            <li>Receive in home on call</li>
-                        </ul>
-                    </li>
-                    <li>Quantity and weight</li>
-                </ul>
+        <div class="plans">
+            <h1 id="Order_now">Check our plans below!</h1>
+            <p>It's a subscribe system where you choose between three packages, choosing one you'll fill an online sheet who will redirect for your e-mail or message app when completed.</p>
+            <p>There you'll fill many camps related with freight, package type, weight, quantity and other. It'll take some time and attention from you, but doing it you'll see our plans are more economic and safe for your pet than you going to the market or petshop and take a random pet food.</p>
+            <div class="card-cntr">
+                <div class="card">
+                    <h3>Standard plan</h3>
+                    <ul>
+                        <li>Choose the food and package type</li>
+                        <li>
+                            Type of freights:
+                            <ul>
+                                <li>Collect in one of our stores or partners</li>
+                                <li>Receive in home as scheduled</li>
+                                <li>Receive in home on call</li>
+                            </ul>
+                        </li>
+                        <li>Quantity and weight</li>
+                    </ul>
+                    <button>Choose</button>
+                </div>
+                <div class="card">
+                    <h3>Diet plan</h3>
+                    <ul>
+                        <li>All the Standard plan features</li>
+                        <li>Dual-way service<span class="asterisk">*</span></li>
+                        <li>Customized service</li>
+                        <li>Personal diet</li>
+                        <li>Diet and pet's stats follow-up</li>
+                    </ul>
+                    <button>Choose</button>
+                </div>
+                <div class="card">
+                    <h3>Full plan</h3>
+                    <ul>
+                        <li>All the Diet plan features</li>
+                        <li>Triple-way service<span class="asterisk">**</span></li>
+                        <li>Emergency freight</li>
+                        <li>Quick service 24hr</li>
+                        <li>Special food for treatment</li>
+                    </ul>
+                    <button>Choose</button>
+                </div>
             </div>
-            <div class="card">
-                <p>Diet plan</p>
-                <ul>
-                    <li>All the Standard plan features</li>
-                    <li>Dual-way service*</li>
-                    <li>Customized service</li>
-                    <li>Personal diet</li>
-                    <li>Diet and pet's stats follow-up</li>
-                </ul>
-            </div>
-            <div class="card">
-                <p>Full plan</p>
-                <ul>
-                    <li>All the Diet plan features</li>
-                    <li>Triple-way service**</li>
-                    <li>Emergency freight</li>
-                    <li>Quick service 24hr</li>
-                    <li>Special food for treatment</li>
-                </ul>
-            </div>
+            <p>Dual-way service: Means the plan count with your support (giving us your pet data) and us (collecting the data, processing it, instructing you and updating the diet)</p>
+            <p>Triple-way service: When you, us and your vet communicate with each other for duly attend your pet.</p>
         </div>
+        <footer>
+
+        </footer>
     </main>
 </body>
 </html>
@@ -120,7 +138,7 @@
         2. You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
         3. Within the #header element, you can see a nav element with a corresponding id="nav-bar"
         4. You can see at least three clickable elements inside the nav element, each with the class nav-link
-    5. When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+        5. When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
         6. You can watch an embedded product video with id="video"
         7. Your landing page has a form element with a corresponding id="form"
         8. Within the form, there is an input field with id="email" where you can enter an email address
@@ -128,7 +146,7 @@
         10. The #email input field uses HTML5 validation to confirm that the entered text is an email address
         11. Within the form, there is a submit input with a corresponding id="submit"
         12. When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
-    13. The navbar should always be at the top of the viewport
+        13. The navbar should always be at the top of the viewport
         14. Your product landing page should have at least one media query
         15. Your product landing page should utilize CSS flexbox at least once
 -->
