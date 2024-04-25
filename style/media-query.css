@@ -8,5 +8,52 @@
 */
 
 @media screen and (min-width: 601px) {
-    
+    #header {
+        flex-direction: row;
+        justify-content: space-between;
+
+        background: linear-gradient(
+        to left,
+        #c066db 10%,
+        #c378da 30%,
+        #cf97e0 60%,
+        #ddb2eb 85%,
+        white
+    );
+    }
+    #header .img-cntr {
+        background: none;
+    }
+    #header nav {
+        flex-direction: column;
+        top: 0;
+        margin-right: 5%;
+        padding: 0 5px;
+        background-color: transparent;
+    }
+    #header hr {
+        display: none;
+    }
+
+    main {
+        margin-top: 135px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #header nav {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        padding: 0;
+        margin-right: 2%;
+    }
+    nav a {
+        transition: 0.5s ease-in-out;
+        border-radius: 50%;
+    }
+    nav a:hover {
+        background-color: #A51BD0;
+        box-shadow: 0 0 3px 5px #A51BD0;
+    }
 }
