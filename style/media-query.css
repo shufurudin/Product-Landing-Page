@@ -34,10 +34,6 @@
     #header hr {
         display: none;
     }
-
-    main {
-        margin-top: 135px;
-    }
 }
 
 @media screen and (min-width: 769px) {
@@ -55,5 +51,11 @@
     nav a:hover {
         background-color: #A51BD0;
         box-shadow: 0 0 3px 5px #A51BD0;
+    }
+
+    /* --- ---  CARDS  --- --- */
+    .card-cntr {
+        flex-direction: row;
+        
     }
 }
